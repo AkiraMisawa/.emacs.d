@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: solve
+# key: solve
+# binding: direct-keybinding
+# --
+solve ${1:problem} (u, v) = int2d (${2:Th}) () - int1d (${3:Th, a}) ();

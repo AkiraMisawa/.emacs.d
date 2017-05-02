@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: mesh
+# key: mesh
+# binding: direct-keybinding
+# --
+mesh ${1:Th} = buildmesh ( ${2:a0(n)} + ${3:a1(n)} + ${4:a2(n)} );

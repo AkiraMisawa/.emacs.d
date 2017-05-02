@@ -1,0 +1,14 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: eigenvalue
+# key: eigenvalue
+# binding: direct-keybinding
+# --
+// OP : 一般固有値問題 Au = lam Bu を解くため, シフトした行列 A-sigmaB を入れる
+// B : 行列Bを入れる
+// sym= : OPが対称ならtrueを設定. このとき, 固有値は実数のみとなる.
+// value= : 固有値の実部を格納するための配列
+// ivalue= : 固有値の虚部を格納するための配列
+// tol= : 相対確度(relative accuracy)の値を設定
+// sigma= : シフト値sigmaを設定
+// ncv= : Lanczos法における基底関数の個数
+EigenValue ( ${1:OP}, ${2:B}, sym=${3:true}, value=${4:value[]}, nev = ${5:nev}, ivalue=${6:ivalue[]}, tol=${7:tol}, sigma=${8:sigma}, ncv=${9:ncv} )

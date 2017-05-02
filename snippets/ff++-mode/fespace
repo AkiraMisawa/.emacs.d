@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: fespace
+# key: fespace
+# binding: direct-keybinding
+# --
+fespace Vh(${1:Th}, ${2:P1});

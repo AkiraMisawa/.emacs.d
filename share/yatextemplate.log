@@ -1,0 +1,88 @@
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013) (format=eptex 2014.4.12)  12 APR 2014 16:31
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**yatextemplate
+(./yatextemplate.tex
+! Undefined control sequence.
+l.1 \documentclass
+                  [12pt]{jsarticle}
+? 
+! Undefined control sequence.
+l.3   \usepackage
+                 {otf,amsmath,amsthm,amssymb,cases,mathrsfs, subfigure, aryd...
+
+? 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                                  
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{/Users/Misawa/.emacs.d/share/mystl.tex}'.
+l.4 ...put{/Users/Misawa/.emacs.d/share/mystl.tex}
+                                      

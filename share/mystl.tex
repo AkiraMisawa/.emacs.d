@@ -1,0 +1,119 @@
+\RequirePackage{amsmath, amssymb, amsfonts, yhmath}
+\RequirePackage{graphicx}
+\RequirePackage{enumerate}
+\RequirePackage{tikz}
+
+  %
+  % ここに自分専用のマクロや \setlength や \newtheorem などを書く。
+  %
+
+  % plain -> 見出し太字本文斜体, definition -> 見出し太字本文非斜体,
+  % remark -> 見出し斜体本文非斜体
+  \theoremstyle{definition} 
+  \newtheorem{theorem}{定理}[section]
+  \newtheorem{prop}[theorem]{命題}
+  \newtheorem{lemma}[theorem]{補題}
+  \newtheorem{cor}[theorem]{系}
+  \newtheorem{example}[theorem]{例}
+  \newtheorem{prob}[theorem]{問題}
+  \newtheorem{definition}[theorem]{定義}
+  \newtheorem{rem}[theorem]{注意}
+  \newtheorem{guide}[theorem]{参考}
+  \newtheorem{assum}[theorem]{仮定}
+
+  \numberwithin{theorem}{section}  % 定理番号を「定理2.3」のように印刷
+  \numberwithin{equation}{section} % 式番号を「(3.5)」のように印刷
+
+  % caption 日本語
+  \renewcommand{\figurename}{図}
+  \renewcommand{\tablename}{表}
+  \newcommand\bigzerol{\smash{\hbox{\large 0}}}             % 左下の大きなゼロ
+  \newcommand\bigzerou{\smash{\lower.3ex\hbox{\large 0}}}   % 右上の大きなゼロ
+  \def\hsymb#1{\mbox{\strut\rlap{\smash{\Huge$#1$}}\quad}}
+  \def\hsymbo#1{\mbox{\strut\rlap{\smash{\Large$#1$}}\quad}}
+
+%   \makeatletter %sectionをchapterっぽくする.
+% \renewcommand{\presectionname}{第}
+% \renewcommand{\postsectionname}{章}
+% %\renewcommand{\thesection}{\@arabic\c@section}
+% \renewcommand{\section}{%
+%     \if@slide\clearpage\fi
+%     \@startsection{section}{1}{\z@}%
+%     {\Cvs \@plus.5\Cdp \@minus.2\Cdp}% 前アキ
+%     {.5\Cvs \@plus.3\Cdp}% 後アキ
+%     {\normalfont\LARGE\headfont\raggedright}}
+% %
+% %\renewcommand{\thesubsection}{\@arabic\c@subsection}%subsectionが1.1みたいになるのを1に変える
+% %\renewcommand{\thesubsubsection}{%
+% %   \thesubsection.\@arabic\c@subsubsection}
+% %\renewcommand{\theparagraph}{%
+% %   \thesubsubsection.\@arabic\c@paragraph}
+% %\renewcommand{\thesubparagraph}{%
+% %   \theparagraph.\@arabic\c@subparagraph}
+% %
+% \if@twocolumn
+%   \renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}%
+%     {\z@}{\z@}%
+%     {\normalfont\normalsize\headfont}}
+% \else
+%   \renewcommand{\subsection}{\@startsection{subsection}{2}{\z@}
+%     {\Cvs \@plus.5\Cdp \@minus.2\Cdp}% 前アキ
+%     {.5\Cvs \@plus.3\Cdp}% 後アキ
+%     {\normalfont\Large\headfont}}%subsectionをLargeに変える
+% \makeatother
+
+
+  % \begin{theorem}
+  % \label{th:hoge}
+    % 定理の内容.    引用する時は \ref{th:hoge} として使う
+    % \end{theorem}
+
+    %
+    % proof environment without \qed
+    %
+    \makeatletter
+    %\renewenvironment{proof}[1][\proofname]{\par
+    \newenvironment{Proof}[1][\Proofname]{\par
+    \normalfont
+    \topsep6\p@\@plus6\p@ \trivlist
+    \item[\hskip\labelsep{\bfseries #1}\@addpunct{\bfseries.}]\ignorespaces
+    }{%
+    \endtrivlist
+    }
+    %\renewcommand{\proofname}{証明}
+    %\renewcommand{\proofname}{Proof}
+    \newcommand{\Proofname}{証明}
+    %\newcommand{\Proofname}{Proof}
+    \makeatother
+    %
+    % \qed
+    %
+    \makeatletter
+    \def\BOXSYMBOL{\RIfM@\bgroup\else$\bgroup\aftergroup$\fi
+    \vcenter{\hrule\hbox{\vrule height.85em\kern.6em\vrule}\hrule}\egroup}
+    \makeatother
+    \makeatletter
+    \def\BLACKBOXSYMBOL{\RIfM@\bgroup\else$\bgroup\aftergroup$\fi
+    \vcenter{\hrule\vbox{\hrule width 2.3mm height .85em\hrule}\hrule}\egroup}
+    \makeatother
+%\vbox{\hrule width 10mm height 4mm depth 0mm}
+    \newcommand{\BOX}{%
+    \ifmmode\else\leavevmode\unskip\penalty9999\hbox{}\nobreak\hfill\fi
+    \quad\hbox{\BOXSYMBOL}}
+    \newcommand{\BLACKBOX}{%
+    \ifmmode\else\leavevmode\unskip\penalty9999\hbox{}\nobreak\hfill\fi
+    \quad\hbox{\BLACKBOXSYMBOL}}
+
+    %\renewcommand\qed{\BOX}
+    \newcommand\QED{\BOX}
+    \newcommand\bQED{\BLACKBOX}
+      % \begin{Proof}[定理\ref{thm:hoge}の証明]
+        % ここにはできるだけクリアな定理\ref{thm:hoge}の証明を書く.
+      	% \QED
+      % \end{Proof}
+      % と書くと、
+      % 定理3.2の証明.  ここにはできるだけクリアな定理3.2の証明を書く.  □
+
+
+      % 微分のdは立体で. 
+      \def\diff{\mathrm d}

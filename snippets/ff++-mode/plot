@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: plot
+# key: plot
+# binding: direct-keybinding
+# --
+plot (${1:Th}, wait = ${2:true}, ps = "${4:poyo}.eps");

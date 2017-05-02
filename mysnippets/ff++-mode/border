@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: border
+# key: border
+# binding: direct-keybinding
+# --
+border a${1:num} (t = 0, 1) { x = ${2:t}; y = ${3:t}; label = ${4:0}; }
