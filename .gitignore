@@ -1,0 +1,8 @@
+*.el~
+history
+tramp
+undohist
+semanticdb
+backups
+auto-save-list
+/.python-environments/
