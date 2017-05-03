@@ -1,0 +1,1 @@
+("/usr/local/" "~/.emacs.d/" "~/work/cmake_test/src/" "~/work/cmake_test/build/")
