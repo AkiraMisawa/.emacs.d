@@ -1,1 +1,1 @@
-("/usr/local/" "~/.emacs.d/" "~/work/cmake_test/src/" "~/work/cmake_test/build/")
+("~/.emacs.d/" "~/sandbox/sicp_in_python/" "~/sandbox/AutomaticDifferentiation/" "~/work/TMP/" "/usr/local/" "~/sandbox/googletest/" "~/work/cpppractice/" "~/cmakeTest/" "~/sandbox/rtags/" "~/CLionProjects/boost_spirit/" "~/sandbox/myblog/" "~/sandbox/pelican-themes/pelican-blueidea/" "~/sandbox/pelican-plugins/" "~/sandbox/pyalgo/" "~/sandbox/quants_date/" "~/work/cmake_test/src/" "~/work/cmake_test/build/")

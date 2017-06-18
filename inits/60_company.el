@@ -2,7 +2,6 @@
 (global-company-mode +1)
 
 ;; 自動補完をoffにしたい場合，company-ide-delayをnilに設定する
-;; auto-completeでいうところのac-auto-startにあたる．
 (setq company-idle-delay 0)
 
 (set-face-attribute 'company-tooltip nil
@@ -57,7 +56,7 @@
       (company--insert-candidate2 company-common))))
 
 (define-key company-active-map (kbd "<tab>") 'company-complete-common2)
-(global-set-key (kbd "<tab>") 'company-complete)
+;;(global-set-key (kbd "<tab>") 'company-complete)
 
 ;; 各種メジャーモードでも C-iで company-modeの補完を使う
 (define-key emacs-lisp-mode-map (kbd "C-i") 'company-complete)
@@ -65,3 +64,6 @@
 
 ;; quick-help
 (company-quickhelp-mode +1)
+
+;; company for haskell
+(add-to-list 'company-backends 'company-ghc)

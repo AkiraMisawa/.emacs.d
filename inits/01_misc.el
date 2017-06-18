@@ -1,5 +1,8 @@
 ;;;; 変数の初期設定など
 
+;; mark set
+(global-set-key (kbd "C-<return>") 'set-mark-command)
+
 ;; 行を保ったまま上下に連続して移動する
 (defun move-line-down ()
   (interactive)
@@ -250,6 +253,7 @@
 
 ;; ハイライト関係の設定
 ;; 現在行のハイライト
+(require 'hl-line)
 (defface hlline-face
   '((((class color)
       (background dark))
@@ -261,7 +265,17 @@
      ()))
   "*Face used by hl-line.")
 (setq hl-line-face 'hlline-face)
-(global-hl-line-mode t)
+
+;;; hl-lineを無効にするメジャーモードを指定する
+(defvar global-hl-line-timer-exclude-modes '(todotxt-mode))
+(defun global-hl-line-timer-function ()
+  (unless (memq major-mode global-hl-line-timer-exclude-modes)
+    (global-hl-line-unhighlight-all)
+    (let ((global-hl-line-mode t))
+      (global-hl-line-highlight))))
+(setq global-hl-line-timer
+      (run-with-idle-timer 0.03 t 'global-hl-line-timer-function))
+;; (cancel-timer global-hl-line-timer)
 
 ;; 対応する括弧をハイライト
 (show-paren-mode t)

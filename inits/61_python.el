@@ -25,6 +25,9 @@
 ;; インストールされる場所は jedi:environment-rootで指定可能
 (add-to-list 'company-backends 'company-jedi)
 
+;; jedi go-to-definition
+(define-key python-mode-map (kbd "M-.") 'jedi:goto-definition)
+(define-key python-mode-map (kbd "M-,") 'jedi:goto-definition-pop-marker)
 
 ;; flymake関連の設定
 (require 'flymake-python-pyflakes)

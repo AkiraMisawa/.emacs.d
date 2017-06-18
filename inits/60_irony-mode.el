@@ -15,7 +15,7 @@
 ;; 連想リストの中身を文字列のリストに変更せず、変数そのままの構造を利用。
 ;; 複数のコンパイルオプションはスペースで区切る
 (setq irony-lang-compile-option-alist
-      (quote ((c++-mode . "c++ -std=c++11")
+      (quote ((c++-mode . "c++ -std=c++14")
               (c-mode . "c"))))
 
 ;; アドバイスによって関数を再定義。

@@ -9,3 +9,4 @@
        (shell-quote-argument (buffer-file-name))))
   )
 (global-set-key "\C-cm" 'markdown-preview-file)
+(modify-coding-system-alist 'file "\\.md\\'" 'utf-8)
